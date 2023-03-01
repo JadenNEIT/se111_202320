@@ -47,7 +47,7 @@
         <br>
         <br>
 
-        <div id="final" style="border:1px solid rgb(87, 86, 86); padding:15px; background-color:rgb(168, 168, 168);">
+        <div id="final" style="border:1px solid rgb(109, 44, 44); padding:15px; background-colorrgb(40, 49, 85));">
 
             <h3>Employee Info: </h3>
             <p id="info" style="font-family:Courier New, monospace;"><i>Information will be loaded once above form is filled.</i></p>
@@ -68,36 +68,34 @@
 
     <script>
         //edit the below statement to select the #enter-button id from the HTML file
-        document.querySelector(#enter-button).addEventListener(`click`, alertName)
+        document.querySelector(enter-button).addEventListener(`click`, alertName)
         
         
 
         function alertName(e)
-        {
-            //get each *value* from the form elements (first name, last name, hours worked, hourly rate) and store them into vars
+    
+             //get each *value* from the form elements (first name, last name, hours worked, hourly rate) and store them into vars
+           
+             var fname = "first name"
+        
 
-            /*USE THE FOLLOWING VARIABLE NAMES:
-            fname --> first name, #first
-            lname --> last name, #last
-            hours --> hours worked, #hours
-            rate --> hourly rate, #rate */
-            
-            var fname = "first name"
             var lname = "last name"
+
             var hours = "hours worked"
+
             var rate = "hourly rate"
 
             //console.log() all four values
             
-            console.log(#first)
-            console.log(#last)
-            console.log(#hours)
-            console.log(#rate)
+            console.log(fname)
+            console.log(lname)
+            console.log(hours)
+            console.log(rate)
 
             //add the first and last name values together and store into a new variable called 'full' holding the user's full name
             var full 
-            var fname
-            var lname
+            var full = fname + lname
+            
 
             //console.log() the full name value
             console.log(full)
@@ -105,26 +103,33 @@
 
             //convert both hours and rate to Number() data types
             
+            hours = Number(hours)
+            rate = Number(rate)
 
-
+            
             //NOTE: DO NOT MOVE ON UNTIL YOU ARE ABLE TO DISPLAY THE CORRECT VALUES! This is a practice in testing as you build! 
 
             //create gross, taxAmount, net variables and store corresponding data to them
             //use a tax percentage of 20% (.2)
             
-
+            var gross
+            var taxAmount
+            var net
             //console.log() all three processed values, rounded to the second decimal place
-            console.log(.toFixed(2))
-
-
+            console.log(gross.toFixed(2))
+            console.log(taxAmount.toFixed(2))
+            console.log(net.toFixed(2))
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
             var finalMessage = `fullname`
+            <br>
+
+            
 
         
 
             //create a new var called 'info' and store the entire #info *HTML element* to it
 
-            var info
+            info
             //create a new var called 'num' and store the entire #check *HTML element* to it
             
             var num
@@ -149,7 +154,7 @@
                 alert(`${full}\nHOURS: ${hours}\nRATE: $${rate.toFixed(2)}\n\nGROSS PAY: $${gross.toFixed(2)}\nTAX AMOUNT: $${taxAmount.toFixed(2)}\nNET PAY: $${net.toFixed(2)}`)
             }
             
-        }
+        
         
     </script>
     
