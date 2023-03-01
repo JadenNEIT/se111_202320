@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jaden Agnew">
+<meta name="description" content="Week 6 JS Intro">
+<title>Week 6 | JS Intro</title>
+</head>
+
+<body>
+   <h1>Week 6 Intro Demo | Javascript</h1>
+   
+ 
+   <script>
+       var tax = .20
+      var sum
+      console.log(sum) //often used for testing
+      var sam
+      var name = prompt(`What is your first name?`)
+        alert(`Hello, ${name}.`)
+      //prompts user for value; waits for the ENTER key
+      var rate = prompt("Enter your hourly rate: ") 
+        alert(`the hourly rate of pay is: ${rate}`)
+      //store the value form prompt()
+      var hours = prompt("Enter your hours worked over two weeks: ")
+      alert(`The amount of hours is: ${hours}`)
+      var multi
+      var multi = rate * hours
+        alert(`Your gross pay is: ${multi}`)
+      //all data from prompt() is a STRING; must convert to Number() if wanting to do math
+       tax = prompt("Enter the rate due to Uncle Sam: ")
+        let tax = tax.toFixed(2)
+        var sam = multi * tax
+      alert(`You owe: {sam}`)
+
+       var sum = multi * tax
+       alert(`You owe Uncle Sam: {sum}`)
+      //convert num to an actual Number
+      num = Number(num)
+
+      //num is now a NUMBER and can be used in a math process
+      var num = 800
+        alert(`Your net pay is: {num}`)
+      console.log(num)
+
+   </script>
+
+</body>
+</html>
